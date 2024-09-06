@@ -17,7 +17,7 @@ class Owner:
     def __init__(self,name):
          self.name = name
 
-         def pet(self):
+    def pets(self):
              return [pet for pet in Pet.all if pet.owner == self]
     def add_pet(self, pet):
         if not isinstance(pet, Pet):
